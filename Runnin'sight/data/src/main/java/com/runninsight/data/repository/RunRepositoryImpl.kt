@@ -1,6 +1,9 @@
 package com.runninsight.data.repository
 
 import com.runninsight.data.location.LocationProvider
+import com.runninsight.domain.model.GeoPoint
+import com.runninsight.domain.model.RunSession
+import com.runninsight.domain.repository.RunRepository
 import java.util.UUID
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.MutableStateFlow
