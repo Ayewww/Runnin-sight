@@ -1,5 +1,7 @@
 package com.runninsight.data.location
 
+import com.runninsight.domain.model.GeoPoint
+
 /**
  * Adapter boundary for Naver Map SDK based location retrieval.
  *
