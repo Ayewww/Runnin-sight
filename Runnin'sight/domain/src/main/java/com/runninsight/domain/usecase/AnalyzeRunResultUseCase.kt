@@ -1,5 +1,10 @@
 package com.runninsight.domain.usecase
 
+import com.runninsight.domain.analysis.RunAnalysisScorer
+import com.runninsight.domain.model.RunAnalysis
+import com.runninsight.domain.repository.AnalysisRepository
+
+
 class AnalyzeRunResultUseCase(
     private val analysisRepository: AnalysisRepository,
     private val runAnalysisScorer: RunAnalysisScorer,
