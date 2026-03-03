@@ -43,7 +43,6 @@ android {
 
 dependencies {
     implementation(project(":feature:auth"))
-    implementation(project(":feature:tracking"))
     implementation(project(":feature:analysis"))
     implementation(project(":feature:history"))
     implementation(project(":data"))
