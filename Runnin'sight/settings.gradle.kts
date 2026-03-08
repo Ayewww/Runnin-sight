@@ -1,30 +1,35 @@
 pluginManagement {
+    plugins {
+        id("com.google.gms.google-services") version "4.4.4" apply false
+    }
     repositories {
-        google {
-            content {
-                includeGroupByRegex("com\\.android.*")
-                includeGroupByRegex("com\\.google.*")
-                includeGroupByRegex("androidx.*")
-            }
-        }
+        google()
         mavenCentral()
         gradlePluginPortal()
     }
 }
+
 dependencyResolutionManagement {
     repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
     repositories {
         google()
         mavenCentral()
+        maven { url = uri("https://repository.map.naver.com/archive/maven") }
+        maven { url = java.net.URI("https://devrepo.kakao.com/nexus/content/groups/public/") }
+        maven { url = uri("https://jitpack.io") }
     }
 }
 
 rootProject.name = "RunninSight"
 include(":app")
 include(":data")
+include(":data:tracking")
 include(":domain")
+include(":domain:tracking")
 include(":core")
 include(":feature:auth")
-include(":feature:tracking")
 include(":feature:analysis")
 include(":feature:history")
+include(":data:tracking")
+include(":domain:tracking")
+include(":feature:tracking")
