@@ -23,7 +23,9 @@ dependencyResolutionManagement {
 rootProject.name = "RunninSight"
 include(":app")
 include(":data")
+include(":data:tracking")
 include(":domain")
+include(":domain:tracking")
 include(":core")
 include(":feature:auth")
 include(":feature:analysis")
